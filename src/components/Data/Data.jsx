@@ -1,5 +1,4 @@
 import React, { useMemo, useState, useEffect } from 'react';
-//import data from './data.json';
 import Header from '../shared/Header';
 import axios from 'axios';
 
@@ -26,6 +25,20 @@ const Data = () => {
   });
   };
 
+  const isolateC = event => {
+    axios.get(APILINK).then(resp=>{
+    event.persist();
+    setData([...resp.data.filter(datum => (Number(datum.chips) >= 1))]);
+  });
+  };
+
+  const isolateNC = event => {
+    axios.get(APILINK).then(resp=>{
+    event.persist();
+    setData([...resp.data.filter(datum => (Number(datum.chips) === 0))]);
+  });
+  };
+
   useEffect(() => {
     axios.get(APILINK)
     .then(resp => {
@@ -33,36 +46,23 @@ const Data = () => {
     });
   }, []);
 
-// const Data = () => {
-//   const teams = useMemo(() => data, []);
-//   const [data, setData] = useState([""]);
-
-//   const filter = event => {
-//     event.persist();
-//     const value = event.target.value;
-    
-//     if (value.length === 0) {
-//       setData([...data]);
-//     } else if (isNaN(value)) {
-//       const regex = new RegExp(value);
-//       setData([...data.filter(datum => (regex.test(datum.title) || regex.test(datum.body)))]);
-//     } else {
-//       const num = Number(value);
-//       setData([...data.filter(datum => (Number(datum.userId) === num || Number(datum.id) === num))]);
-//     }
-//   };
-
   return (
     <>
-        <Header title="Team Info"/>
+        <Header title="NBA Teams"/>
         <div className="container">
-            <div className="row my-2 justify-content-end">
-              <div className="col-auto">
-                <b><label htmlFor="search" className="col-form-label">Search</label></b>
+            <div className="d-flex bd-highlight py-2">
+              <div className="mr-auto bd-highlight">
+                <div className="btn-group">
+                  <button name="isolate" className="btn btn-primary" onClick = {isolateC}>Isolate Champions</button>
+                  <button name="isolate" className="btn btn-secondary" onClick = {isolateNC}>Isolate Non-Champions</button>
+                </div>
               </div>
-              <div className="col-auto">
-                <input type="text" name="filter" className="form-control" onChange = {filter}/>
-              </div>
+                <div className="bd-highlight pr-2">
+                  <b><label htmlFor="search" className="col-form-label">Search</label></b>
+                  </div>
+                <div className="bd-highlight">
+                  <input type="text" name="filter" className="form-control" onChange = {filter}/>
+                </div>
             </div>
             
             <table className="table">
