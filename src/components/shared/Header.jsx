@@ -4,7 +4,7 @@ const Header = ({ title = "Project" }) => {
   useEffect(() => document.title = title);
 
   return (
-    <header>
+    <header className="bg-dark p-2 text-center text-light">
       <h1>{ title }</h1>
     </header>
   );

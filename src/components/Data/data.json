@@ -1,0 +1,212 @@
+[
+    {
+      "teamId": 1,
+      "abbreviation": "ATL",
+      "name": "Hawks",
+      "chips": 1,
+      "location": "Atlanta"
+    },
+    {
+      "teamId": 2,
+      "abbreviation": "BOS",
+      "name": "Celtics",
+      "chips": 17,
+      "location": "Boston"
+    },
+    {
+      "teamId": 3,
+      "abbreviation": "BKN",
+      "name": "Nets",
+      "chips": 0,
+      "location": "Brooklyn"
+    },
+    {
+      "teamId": 4,
+      "abbreviation": "CHA",
+      "name": "Hornets",
+      "chips": 0,
+      "location": "Charlotte"
+    },
+    {
+      "teamId": 5,
+      "abbreviation": "CHI",
+      "name": "Bulls",
+      "chips": 6,
+      "location": "Chicago"
+    },
+    {
+      "teamId": 6,
+      "abbreviation": "CLE",
+      "name": "Cavaliers",
+      "chips": 1,
+      "location": "Cleveland"
+    },
+    {
+      "teamId": 7,
+      "abbreviation": "DAL",
+      "name": "Mavericks",
+      "chips": 1,
+      "location": "Dallas"
+    },
+    {
+      "teamId": 8,
+      "abbreviation": "DEN",
+      "name": "Nuggets",
+      "chips": 0,
+      "location": "Denver"
+    },
+    {
+      "teamId": 9,
+      "abbreviation": "DET",
+      "name": "Pistons",
+      "chips": 3,
+      "location": "Detroit"
+    },
+    {
+      "teamId": 10,
+      "abbreviation": "GSW",
+      "name": "Warriors",
+      "chips": 6,
+      "location": "Golden State"
+    },
+    {
+      "teamId": 11,
+      "abbreviation": "HOU",
+      "name": "Rockets",
+      "chips": 2,
+      "location": "Houston"
+    },
+    {
+      "teamId": 12,
+      "abbreviation": "IND",
+      "name": "Pacers",
+      "chips": 0,
+      "location": "Indiana"
+    },
+    {
+      "teamId": 13,
+      "abbreviation": "LAC",
+      "name": "Clippers",
+      "chips": 0,
+      "location": "Los Angeles"
+    },
+    {
+      "teamId": 14,
+      "abbreviation": "LAL",
+      "name": "Lakers",
+      "chips": 17,
+      "location": "Los Angeles"
+    },
+    {
+      "teamId": 15,
+      "abbreviation": "MEM",
+      "name": "Grizzlies",
+      "chips": 0,
+      "location": "Memphis"
+    },
+    {
+      "teamId": 16,
+      "abbreviation": "MIA",
+      "name": "Heat",
+      "chips": 3,
+      "location": "Miami"
+    },
+    {
+      "teamId": 17,
+      "abbreviation": "MIL",
+      "name": "Bucks",
+      "chips": 1,
+      "location": "Milwaukee"
+    },
+    {
+      "teamId": 18,
+      "abbreviation": "MIN",
+      "name": "Timberwolves",
+      "chips": 0,
+      "location": "Minnesota"
+    },
+    {
+      "teamId": 19,
+      "abbreviation": "NOP",
+      "name": "Pelicans",
+      "chips": 0,
+      "location": "New Orleans"
+    },
+    {
+      "teamId": 20,
+      "abbreviation": "NYK",
+      "name": "Knicks",
+      "chips": 2,
+      "location": "New York"
+    },
+    {
+      "teamId": 21,
+      "abbreviation": "OKC",
+      "name": "Thunder",
+      "chips": 1,
+      "location": "Oklahoma City"
+    },
+    {
+      "teamId": 22,
+      "abbreviation": "ORL",
+      "name": "Magic",
+      "chips": 0,
+      "location": "Orlando"
+    },
+    {
+      "teamId": 23,
+      "abbreviation": "PHI",
+      "name": "76ers",
+      "chips": 3,
+      "location": "Philadelphia"
+    },
+    {
+      "teamId": 24,
+      "abbreviation": "PHX",
+      "name": "Suns",
+      "chips": 0,
+      "location": "Phoenix"
+    },
+    {
+      "teamId": 25,
+      "abbreviation": "POR",
+      "name": "Trail Blazers",
+      "chips": 1,
+      "location": "Portland"
+    },
+    {
+      "teamId": 268,
+      "abbreviation": "SAC",
+      "name": "Kings",
+      "chips": 1,
+      "location": "Sacramento"
+    },
+    {
+      "teamId": 27,
+      "abbreviation": "SAS",
+      "name": "Spurs",
+      "chips": 5,
+      "location": "San Antonio"
+    },
+    {
+      "teamId": 28,
+      "abbreviation": "TOR",
+      "name": "Raptors",
+      "chips": 1,
+      "location": "Toronto"
+    },
+    {
+      "teamId": 29,
+      "abbreviation": "UTA",
+      "name": "Jazz",
+      "chips": 0,
+      "location": "Utah"
+    },
+    {
+      "teamId": 30,
+      "abbreviation": "WAS",
+      "name": "Wizards",
+      "chips": 1,
+      "location": "Washington"
+    }
+  ]
