@@ -1,9 +1,10 @@
 import React, { useMemo, useState, useEffect } from 'react';
+//import data from './data.json';
 import Header from '../shared/Header';
 import axios from 'axios';
 
 const Data = () => {
-  const APILINK = 'https://jsonplaceholder.typicode.com/posts';
+  const APILINK = 'https://skyflocodes.github.io/NBAAPI/NBATEAMS.json';
   const [data, setData] = useState([]);
   const teams = useMemo(() => data, [data]);
 
@@ -15,12 +16,12 @@ const Data = () => {
       setData([...resp.data]);
     } 
     else if (isNaN(value)) {
-      const regex = new RegExp(value);
-      setData([...resp.data.filter(datum => (regex.test(datum.title) || regex.test(datum.body)))]);
+      const regex = new RegExp(value.toString().toLowerCase());
+      setData([...resp.data.filter(datum => (regex.test(datum.name.toString().toLowerCase()) || regex.test(datum.location.toString().toLowerCase()) || regex.test(datum.abbreviation.toString().toLowerCase())))]);
     }
     else {
       const num = Number(value);
-      setData([...resp.data.filter(datum => (Number(datum.userId) === num || Number(datum.id) === num))]);
+      setData([...resp.data.filter(datum => (Number(datum.chips) === num))]);
     }
   });
   };
@@ -32,13 +33,32 @@ const Data = () => {
     });
   }, []);
 
+// const Data = () => {
+//   const teams = useMemo(() => data, []);
+//   const [data, setData] = useState([""]);
+
+//   const filter = event => {
+//     event.persist();
+//     const value = event.target.value;
+    
+//     if (value.length === 0) {
+//       setData([...data]);
+//     } else if (isNaN(value)) {
+//       const regex = new RegExp(value);
+//       setData([...data.filter(datum => (regex.test(datum.title) || regex.test(datum.body)))]);
+//     } else {
+//       const num = Number(value);
+//       setData([...data.filter(datum => (Number(datum.userId) === num || Number(datum.id) === num))]);
+//     }
+//   };
+
   return (
     <>
         <Header title="Team Info"/>
         <div className="container">
-            <div className="row my-3 align-items-center justify-content-end">
+            <div className="row my-2 justify-content-end">
               <div className="col-auto">
-                <b><label htmlFor="filter" className="col-form-label">Filter</label></b>
+                <b><label htmlFor="search" className="col-form-label">Search</label></b>
               </div>
               <div className="col-auto">
                 <input type="text" name="filter" className="form-control" onChange = {filter}/>
