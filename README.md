@@ -1,11 +1,11 @@
-#Welcome to my first react app!
+#Welcome to my first react app!#
 
 This app displays NBA teams, along with their location and number of championship wins.
 
 ##What data is being used?
 This app uses a JSON file I created and hosted on a live Github Pages site.
 
-###Data included in the json:
+###Data included in the json:###
 
 Team Id
 Team Abbreviation
